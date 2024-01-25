@@ -7,3 +7,12 @@ struct Book {
     char a[50];
     int d;
 };
+
+struct library {
+    struct Book book[MAX_BOOKS];
+    int nl;
+
+    };
+
+    
+
