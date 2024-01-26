@@ -42,6 +42,14 @@ void listBooks(const struct Library *library) {
     }
 }
 
+int fetchBook(const struct Library *library, const char *title) {
+    for (int i=0; i<library->numBooks; i++){
+        if (strcmp(library->books[i].title, title) == 0){
+            return i;
+        }
+    }
+}
+
 
 
 
