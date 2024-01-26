@@ -72,6 +72,10 @@ void removeBook(struct Library *library) {
 
 int main(){
     setlocale (LC_ALL, "en_US");
+
+    struct Library library;
+    library.numBooks = 0;
+    
 }
 
 
