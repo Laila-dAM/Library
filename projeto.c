@@ -48,6 +48,14 @@ int fetchBook(const struct Library *library, const char *title) {
             return i;
         }
     }
+
+    return -1;
+}
+
+void removeBook(struct Library *library) {
+    char title[50];
+    printf("Enter the title of the book to remove:");
+    scanf("%s", title);
 }
 
 
