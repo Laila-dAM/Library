@@ -75,6 +75,17 @@ int main(){
 
     struct Library library;
     library.numBooks = 0;
+
+    int choice;
+    do {
+        printf("\n === Menu ===\n");
+        printf("1. Add a book\n");
+        printf("2. List all books\n");
+        printf("3. Remove a book\n");
+        printf("4. Exit\n");
+        printf("Enter your choice:");
+        scanf("%d", &choice);
+    }
     
 }
 
