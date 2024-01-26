@@ -15,6 +15,20 @@ struct Library {
     int numBooks;
 };
 
+void addBook (struct Library *library, const char *title, const char *author, int yearPublication)
+{
+    if (library->numBooks < MAX_BOOKS) {
+        struct Book newBook;
+        strcpy(newBook.title,title);
+        strcpy(newBook.author, author);
+        newBook.yearPublication = yearPublication;
+
+        library->books[library->numBooks] = newBook;
+        library->numBooks++;
+        
+    }
+}
+
 
 
 
