@@ -8,8 +8,13 @@ struct Book {
 char title[50];
 char author[50];
 int yearPublication;
-
 };
+
+struct Library {
+    struct Book books [MAX_BOOKS];
+    int numBooks;
+};
+
 
 
 
