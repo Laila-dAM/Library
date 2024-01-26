@@ -25,7 +25,12 @@ void addBook (struct Library *library, const char *title, const char *author, in
 
         library->books[library->numBooks] = newBook;
         library->numBooks++;
+
+        printf("Book added successfully!\n");
         
+    }
+    else{
+        printf("The library is full. Cannot add more books.\n");
     }
 }
 
