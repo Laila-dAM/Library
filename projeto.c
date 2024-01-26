@@ -48,8 +48,22 @@ for (int i=0; i<library->numBooks; i++){
         return i;
     }
 }
+return -1;
 
+}
 
+void removeBook(struct Library *library, const char *title) {
+    int index = fetchBook(library, title);
+    if (index !=-1) {
+        for (int i=index; i<library -> numBooks -1; i++){
+            library->books[i] = library->books[i+1];
+        }
+        library->numBooks--;
+        printf("Book removed successfully!\n");
+    }
+    else {
+        printf("Book not found in library.\n");
+    }
 }
 
 
