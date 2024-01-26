@@ -10,6 +10,12 @@ struct Book {
     int yearPublication;
 };
 
+struct Library {
+    struct Book books [MAX_BOOKS];
+    int numBooks;
+};
+
+
 
 
 
