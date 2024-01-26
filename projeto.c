@@ -56,6 +56,13 @@ void removeBook(struct Library *library) {
     char title[50];
     printf("Enter the title of the book to remove:");
     scanf("%s", title);
+
+    int index = fetchBook(library, title);
+    if (index !=-1){
+        for (int i = index; i < library->numBooks - 1; i++){
+            library->books[i] = library->books[i+1];
+        }
+    }
 }
 
 
