@@ -66,6 +66,11 @@ void removeBook(struct Library *library, const char *title) {
     }
 }
 
+int main(){
+    setlocale(LC_ALL,"en_US");
+    
+}
+
 
 
 
