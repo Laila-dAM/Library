@@ -85,6 +85,27 @@ int main(){
         printf("4. Exit\n");
         printf("Enter your choice:");
         scanf("%d", &choice);
+
+        switch (choice) {
+      case 1:
+      addBook(&library);
+      break;
+
+      case 2:
+      listBooks(&library);
+      break;
+
+      case 3:
+      removeBook(&library);
+      break;
+
+      case 4:
+      printf("Exiting program.\n");
+      break;
+
+      default:
+      printf("Invalid choice. Please enter a number between 1 and 4.\n");
+        }
     }
     
 }
