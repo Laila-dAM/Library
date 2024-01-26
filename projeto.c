@@ -15,6 +15,26 @@ struct Library {
     int numBooks;
 };
 
+void addBook(struct Library *library) {
+    if (library->numBooks < MAX_BOOKS) {
+        struct Book newBook;
+        printf("Enter book title:");
+        scanf("%s", newBook.title);
+        printf("Enter author:");
+        scanf("%s",newBook.author);
+        printf("Enter year of publication:");
+        scanf("%d", &newBook.yearPublication);
+
+        library->books[library->numBooks] = newBook;
+        library->numBooks++;
+
+        printf("Book added successfully!\n");
+    }
+    else {
+        printf("The library is full. Cannot add more books.\n");
+    }
+}
+
 
 
 
