@@ -62,6 +62,11 @@ void removeBook(struct Library *library) {
         for (int i = index; i < library->numBooks - 1; i++){
             library->books[i] = library->books[i+1];
         }
+        library->numBooks--;
+        printf("=== Book removed successfully! ===\n");
+    }
+    else {
+        printf("=== Book not found in library ===\n");
     }
 }
 
