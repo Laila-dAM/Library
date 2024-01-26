@@ -107,7 +107,8 @@ int main(){
       printf("Invalid choice. Please enter a number between 1 and 4.\n");
         }
     }
-    
+    while (choice !=4);
+    return 0;
 }
 
 
