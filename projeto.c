@@ -34,6 +34,15 @@ void addBook (struct Library *library, const char *title, const char *author, in
     }
 }
 
+void listBooks(const struct Library *library) {
+    printf("List of books in library:\n");
+    for (int i=0; i<library->numBooks; i++){
+        printf("%d. %s, by %s (%d)\n", i+1, library->books[i].title, library->books[i].author, library->books[i].yearPublication);
+    }
+}
+
+
+
 
 
 
